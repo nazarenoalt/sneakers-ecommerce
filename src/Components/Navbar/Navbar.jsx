@@ -15,14 +15,15 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <div className="Navbar__menu-logo navbar-container">
-        <NavbarMenu />
+        {documentWidth < 978 && <NavbarMenu />}
         <Logo />
+        {documentWidth >= 978 && <NavbarMenu />}
+
       </div>
       <div className="Navbar__shopcart-profileavatar navbar-container">
         <ShopCart />
         <ProfileAvatar />
       </div>
-      {documentWidth}
     </div>
   )
 }
