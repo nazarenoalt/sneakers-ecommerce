@@ -1,5 +1,4 @@
 // Core
-import { useContext, useEffect } from 'react';
 import { useDocumentContext } from '../../Context/DocumentProvider';
 // Styles
 import './Navbar.css';
@@ -9,7 +8,6 @@ import ProfileAvatar from "../../Particles/ProfileAvatar/ProfileAvatar"
 import ShopCart from "../../Particles/ShopCart/ShopCart"
 import Logo from '../../Particles/Logo/Logo';
 // Other
-import { DocumentProvider } from '../../Context/DocumentProvider';
 
 const Navbar = () => {
   const documentWidth = useDocumentContext();
