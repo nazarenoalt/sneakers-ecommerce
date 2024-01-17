@@ -1,10 +1,13 @@
 import Navbar from "./Components/Navbar/Navbar"
+import { DocumentProvider } from "./Context/DocumentProvider"
 
 function App() {
   return(
-    <div className="App">
-      <Navbar />
-    </div>
+    <DocumentProvider>
+      <div className="App">
+        <Navbar />
+      </div>
+    </DocumentProvider>
   )
 }
 

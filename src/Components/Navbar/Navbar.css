@@ -9,8 +9,8 @@
   grid-auto-flow: column;
   align-content: center;
   justify-items: space-around;
-  gap: 25px;
+  gap: 20px;
 }
 .Navbar__shopcart-profileavatar.navbar-container {
-  justify-items: end;
+  align-items: center;
 }
