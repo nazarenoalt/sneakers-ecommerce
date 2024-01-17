@@ -1,5 +1,16 @@
 .Navbar {
   display: flex;
+  justify-content:space-between;
   height: 100px;
-  margin: 0;
+  padding: 20px;
+}
+.navbar-container {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-items: space-around;
+  gap: 25px;
+}
+.Navbar__shopcart-profileavatar.navbar-container {
+  justify-items: end;
 }

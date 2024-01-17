@@ -4,15 +4,19 @@ import './Navbar.css';
 import NavbarMenu from "../../Particles/NavbarMenu/NavbarMenu"
 import ProfileAvatar from "../../Particles/ProfileAvatar/ProfileAvatar"
 import ShopCart from "../../Particles/ShopCart/ShopCart"
-// Assets
-import logoImg from '../../assets/logo.svg'
+import Logo from '../../Particles/Logo/Logo';
+
 const Navbar = () => {
   return (
     <div className="Navbar">
-      <NavbarMenu />
-      <img className="Navbar__logo" src={logoImg} alt="Sneakers logo" />
-      <ShopCart />
-      <ProfileAvatar />
+      <div className="Navbar__menu-logo navbar-container">
+        <NavbarMenu />
+        <Logo />
+      </div>
+      <div className="Navbar__shopcart-profileavatar navbar-container">
+        <ShopCart />
+        <ProfileAvatar />
+      </div>
     </div>
   )
 }
